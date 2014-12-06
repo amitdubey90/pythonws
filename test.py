@@ -19,7 +19,7 @@ cursor = db.cursor()
 @route('/shirt/<shirtID>', method='GET')
 def getShirt( shirtID=1234 ):
 	doc = shirtCol.find_one({"shirtId":shirtID},{"_id":0})
-	doc['createdDate'] = doc['createdDate'].strftime("%Y-%m-%d %H:%M:%S")
+	doc['createdDate'] = doc['createdDate'].strftime("%Y-%m-%d")
 	return doc
 	#return json.dumps(doc, default=json_util.default)
 
@@ -27,8 +27,10 @@ def getShirt( shirtID=1234 ):
 def updateShirt():
 	doc = request.json
 	print "doc is %s" % doc
+	olddoc = shirtCol.find_one({"shirtId":doc['shirtId']},{"_id":0})
+	doc['createdDate'] = olddoc['createdDate']
 	shirtCol.update({"shirtId": doc['shirtId']}, doc)
-	return { "success" : "OK"}
+	return { "success" : True}
 
 @route('/shirts', method='DELETE' )
 def deleteShirts():
@@ -72,7 +74,7 @@ def insertShirt():
 	
 	doc = request.json
 	query = "Insert into SHOE_TABLE (shoeId, shoeName, shoeQuantity, createdBy, createdDate) values (%s, %s, %s, %s, %s)"
-	cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))	
+	cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], datetime.datetime.now().strftime("%Y-%m-%d")))	
 	db.commit()
 	return { "success" : "OK" }
 

@@ -23,6 +23,8 @@ def getShirt( shirtID=1234 ):
 def updateShirt():
 	doc = request.json
 	print "doc is %s" % doc
+	olddoc = shirtCol.find_one({"shirtId":doc['shirtId']},{"_id":0})
+	doc['createdDate'] = olddoc['createdDate']
 	shirtCol.update({"shirtId": doc['shirtId']}, doc)
 	return { "success" : True}
 
