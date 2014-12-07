@@ -63,9 +63,8 @@ def getShoe(shoeId="1"):
 @route('/shoes', method="PUT")
 def updateShoe():
 	shoe = request.json
-	sql = "Update SHOE_TABLE set shoeName = '%s', createdBy = '%s', shoeQuantity = '%s' where shoeId = '%s'" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
-	#sql = "Update SHOE_TABLE set shoeName = %s ,createdBy = %s shoeQuantity = %s where shoeId = %s" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
-	print sql
+	#sql = "Update SHOE_TABLE set shoeName = '%s' ,createdBy = '%s' shoeQuantity = '%s' where shoeId = '%s'" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
+	
 	cursor.execute(sql)
 	db.commit()
 	return { "success" : "OK"}
