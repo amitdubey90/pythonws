@@ -55,7 +55,8 @@ def getShirt(shoeId="1"):
 @route('/shoes', method="PUT")
 def updateShirt():
 	doc = request.json
-	
+	sql = "Update SHOE_TABLE set shoeName = '%s' ,createdBy = '%s' shoeQuantity = '%s' where shoeId = '%s'" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
+
 	return { "success" : True}
 
 @route('/shoes', method='DELETE' )

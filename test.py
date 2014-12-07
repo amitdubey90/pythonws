@@ -4,6 +4,7 @@ import json
 import MySQLdb
 import datetime
 from bson import json_util
+import pytz
 
 client = MongoClient('localhost', 27017)
 mongoDB = client.pydb
@@ -12,16 +13,19 @@ shirtCol = mongoDB.shirts
 
 db = MySQLdb.connect(host="localhost", # your host, usually localhost
 					user="root", # your username
-					passwd="root", # your password
+					passwd="summer", # your password
 					db="pydb") # name of the data base
 cursor = db.cursor()
+
+timezone = 'America/Los_Angeles'
+localFormat = "%Y-%m-%d %H:%M:%S"
 
 @route('/shirt/<shirtID>', method='GET')
 def getShirt( shirtID=1234 ):
 	doc = shirtCol.find_one({"shirtId":shirtID},{"_id":0})
 	if not doc:
 		return {"error":"No shirt found"}
-	doc['createdDate'] = doc['createdDate'].strftime("%Y-%m-%d")
+	#doc['createdDate'] = doc['createdDate'].strftime("%Y-%m-%d")
 	return doc
 	#return json.dumps(doc, default=json_util.default)
 
@@ -45,7 +49,9 @@ def insertShirt():
 	
 	#print "inside post"
 	doc = request.json
-	doc['createdDate'] = datetime.datetime.now();
+	currentMoment = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
+	localDatetime = currentMoment.astimezone(pytz.timezone(timezone))
+	doc['createdDate'] = localDatetime.strftime(localFormat)
 	print "doc is %s" % doc
 	id = shirtCol.insert(doc)
 	return { "success" : "OK" }
@@ -80,8 +86,11 @@ def deleteShoe():
 def insertShoe():
 	
 	doc = request.json
+	currentMoment = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
+	localDatetime = currentMoment.astimezone(pytz.timezone(timezone))
+	doc['createdDate'] = localDatetime.strftime(localFormat)
 	query = "Insert into SHOE_TABLE (shoeId, shoeName, shoeQuantity, createdBy, createdDate) values (%s, %s, %s, %s, %s)"
-	cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], datetime.datetime.now().strftime("%Y-%m-%d")))	
+	cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], doc['createdDate']))	
 	db.commit()
 	return { "success" : "OK" }
 
