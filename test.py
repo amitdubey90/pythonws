@@ -13,9 +13,21 @@ shirtCol = mongoDB.shirts
 
 db = MySQLdb.connect(host="localhost", # your host, usually localhost
 					user="root", # your username
-					passwd="root", # your password
+					passwd="summer", # your password
 					db="pydb") # name of the data base
 cursor = db.cursor()
+
+def connectMySql():
+	global db
+	db = MySQLdb.connect(host="localhost", # your host, usually localhost
+					user="root", # your username
+					passwd="summer", # your password
+					db="pydb")
+	global cursor 
+	cursor = db.cursor()
+	print "connection established"
+	#return cursor
+	
 
 timezone = 'America/Los_Angeles'
 localFormat = "%Y-%m-%d %H:%M:%S"
@@ -59,7 +71,12 @@ def insertShirt():
 @route('/shoe/<shoeId>', method='GET')
 def getShoe(shoeId="1"):
 	
-	cursor.execute("SELECT shoeId, shoeName, shoeQuantity, createdBy, createdDate FROM SHOE_TABLE where shoeId = %s" % shoeId)
+	try:
+		cursor.execute("SELECT shoeId, shoeName, shoeQuantity, createdBy, createdDate FROM SHOE_TABLE where shoeId = %s" % shoeId)
+	except (AttributeError, MySQLdb.OperationalError):
+		print "inside exception"
+		connectMySql()
+		cursor.execute("SELECT shoeId, shoeName, shoeQuantity, createdBy, createdDate FROM SHOE_TABLE where shoeId = %s" % shoeId)
 	
 	row = cursor.fetchone()
 	if not row:
@@ -71,15 +88,23 @@ def updateShoe():
 	shoe = request.json
 	sql = "Update SHOE_TABLE set shoeName = '%s', createdBy = '%s', shoeQuantity = '%s' where shoeId = '%s'" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
 	#sql = "Update SHOE_TABLE set shoeName = %s ,createdBy = %s shoeQuantity = %s where shoeId = %s" % (shoe['shoeName'],shoe['createdBy'], shoe['shoeQuantity'], shoe['shoeId'])
-	print sql
-	cursor.execute(sql)
+	#print sql
+	try:
+		cursor.execute(sql)
+	except (AttributeError, MySQLdb.OperationalError):
+		connectMySql()
+		cursor.execute(sql)
 	db.commit()
 	return { "success" : "OK"}
 
 @route('/shoes', method='DELETE' )
 def deleteShoe():
 	doc = request.json
-	cursor.execute("DELETE From SHOE_TABLE where shoeId= %s" %doc['shoeId'])
+	try:
+		cursor.execute("DELETE From SHOE_TABLE where shoeId= %s" %doc['shoeId'])
+	except (AttributeError, MySQLdb.OperationalError):
+		connectMySql()
+		cursor.execute("DELETE From SHOE_TABLE where shoeId= %s" %doc['shoeId'])
 	return { "success" : "OK"}
 
 @route('/shoes', method='POST')
@@ -90,7 +115,13 @@ def insertShoe():
 	localDatetime = currentMoment.astimezone(pytz.timezone(timezone))
 	doc['createdDate'] = localDatetime.strftime(localFormat)
 	query = "Insert into SHOE_TABLE (shoeId, shoeName, shoeQuantity, createdBy, createdDate) values (%s, %s, %s, %s, %s)"
-	cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], doc['createdDate']))	
+
+	try:
+		cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], doc['createdDate']))	
+	except (AttributeError, MySQLdb.OperationalError):
+		connectMySql()
+		cursor.execute(query, (doc['shoeId'], doc['shoeName'], doc['shoeQuantity'], doc['createdBy'], doc['createdDate']))
+		
 	db.commit()
 	return { "success" : "OK" }
 
