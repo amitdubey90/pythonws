@@ -1,0 +1,204 @@
+Bottle v0.13-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+50.131.149.46 - - [08/Dec/2014 00:54:58] "GET /shoe/9999 HTTP/1.1" 200 124
+50.131.149.46 - - [08/Dec/2014 00:55:06] "GET /shirt/9999 HTTP/1.1" 200 158
+50.131.149.46 - - [08/Dec/2014 00:55:10] "GET /shirt/99990 HTTP/1.1" 200 27
+50.131.149.46 - - [08/Dec/2014 00:55:17] "GET /shoe/99990 HTTP/1.1" 200 26
+104.194.6.9 - - [08/Dec/2014 01:24:48] "GET /manager/html HTTP/1.1" 404 753
+116.80.218.10 - - [08/Dec/2014 01:42:30] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+220.233.82.85 - - [08/Dec/2014 01:49:38] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+109.195.100.193 - - [08/Dec/2014 02:01:47] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+93.148.77.191 - - [08/Dec/2014 02:08:16] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+223.255.192.109 - - [08/Dec/2014 03:06:53] "GET /manager/html HTTP/1.1" 404 753
+212.101.54.179 - - [08/Dec/2014 03:56:37] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+104.194.6.9 - - [08/Dec/2014 03:57:46] "GET /manager/html HTTP/1.1" 404 753
+121.6.62.250 - - [08/Dec/2014 05:10:03] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+46.60.253.41 - - [08/Dec/2014 08:33:35] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+84.119.174.185 - - [08/Dec/2014 08:57:36] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+88.64.168.83 - - [08/Dec/2014 10:26:02] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+221.125.81.73 - - [08/Dec/2014 11:07:05] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+78.34.135.162 - - [08/Dec/2014 12:25:08] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+85.241.172.167 - - [08/Dec/2014 12:36:23] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+104.194.12.227 - - [08/Dec/2014 13:31:18] "GET /manager/html HTTP/1.1" 404 753
+123.249.19.23 - - [08/Dec/2014 14:20:07] "GET /manager/html HTTP/1.1" 404 753
+81.221.64.229 - - [08/Dec/2014 14:33:07] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+61.93.245.194 - - [08/Dec/2014 14:41:29] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+95.232.188.128 - - [08/Dec/2014 15:15:04] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+180.153.196.94 - - [08/Dec/2014 16:08:07] "GET / HTTP/1.0" 404 724
+79.114.37.21 - - [08/Dec/2014 16:11:20] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+114.34.232.134 - - [08/Dec/2014 18:00:40] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+37.209.15.97 - - [08/Dec/2014 18:06:50] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+178.188.9.26 - - [08/Dec/2014 18:18:07] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+184.69.177.254 - - [08/Dec/2014 18:26:19] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+77.68.174.19 - - [08/Dec/2014 18:50:38] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+109.164.155.32 - - [08/Dec/2014 18:54:36] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+212.170.108.208 - - [08/Dec/2014 19:08:29] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+176.109.48.210 - - [08/Dec/2014 19:30:17] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+122.38.255.82 - - [08/Dec/2014 19:58:58] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+62.178.139.240 - - [08/Dec/2014 20:35:06] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+220.246.194.48 - - [08/Dec/2014 20:35:39] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+119.105.244.10 - - [08/Dec/2014 21:39:32] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+83.78.123.51 - - [08/Dec/2014 22:22:23] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+89.177.132.64 - - [08/Dec/2014 23:37:10] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+88.87.245.141 - - [09/Dec/2014 00:47:02] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+61.160.247.34 - - [09/Dec/2014 01:09:04] "GET /manager/html HTTP/1.1" 404 753
+115.31.116.238 - - [09/Dec/2014 01:43:36] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+79.245.208.218 - - [09/Dec/2014 01:51:32] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+113.199.108.5 - - [09/Dec/2014 03:19:42] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+37.24.58.23 - - [09/Dec/2014 03:44:05] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+50.117.86.250 - - [09/Dec/2014 04:34:07] "GET /manager/html HTTP/1.1" 404 753
+79.165.175.184 - - [09/Dec/2014 05:44:09] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+115.239.248.57 - - [09/Dec/2014 06:12:02] "GET /manager/html HTTP/1.1" 404 753
+61.160.247.34 - - [09/Dec/2014 06:58:36] "GET /manager/html HTTP/1.1" 404 753
+73.178.141.119 - - [09/Dec/2014 07:12:57] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+73.178.141.119 - - [09/Dec/2014 07:23:01] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+173.34.162.164 - - [09/Dec/2014 07:56:50] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+81.217.84.147 - - [09/Dec/2014 08:26:14] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+91.81.80.192 - - [09/Dec/2014 08:38:46] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+99.238.182.88 - - [09/Dec/2014 08:50:00] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+88.163.144.68 - - [09/Dec/2014 08:57:53] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+80.177.153.97 - - [09/Dec/2014 09:11:52] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+83.208.253.180 - - [09/Dec/2014 09:16:07] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+60.248.254.28 - - [09/Dec/2014 10:20:39] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+122.116.65.63 - - [09/Dec/2014 12:31:42] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+50.117.86.250 - - [09/Dec/2014 12:45:29] "GET /manager/html HTTP/1.1" 404 753
+216.232.22.247 - - [09/Dec/2014 13:14:49] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+178.26.178.254 - - [09/Dec/2014 13:17:32] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+93.193.91.217 - - [09/Dec/2014 13:21:09] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+151.229.27.116 - - [09/Dec/2014 13:26:33] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+66.130.107.152 - - [09/Dec/2014 13:47:49] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+66.60.196.23 - - [09/Dec/2014 14:14:09] "GET /tmUnblock.cgi HTTP/1.1" 404 786
+123.249.26.221 - - [09/Dec/2014 14:30:58] "GET /8080 HTTP/1.1" 404 741
+123.249.26.221 - - [09/Dec/2014 14:30:59] "GET /8080 HTTP/1.1" 404 741
+123.249.19.59 - - [09/Dec/2014 15:16:34] "GET /manager/html HTTP/1.1" 404 753
+104.143.5.5 - - [09/Dec/2014 15:18:06] "GET /manager/html HTTP/1.1" 404 753
+105.233.93.166 - - [09/Dec/2014 15:18:25] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+123.249.19.59 - - [09/Dec/2014 16:14:03] "GET /manager/html HTTP/1.1" 404 753
+61.160.223.69 - - [09/Dec/2014 19:30:02] "GET /manager/html HTTP/1.1" 404 753
+126.22.127.26 - - [09/Dec/2014 19:35:13] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+222.186.58.196 - - [09/Dec/2014 19:58:20] "GET /manager/html HTTP/1.1" 404 753
+124.214.177.154 - - [09/Dec/2014 20:06:28] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+188.9.44.109 - - [09/Dec/2014 20:09:29] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+49.128.54.28 - - [09/Dec/2014 20:47:17] "GET http://www.baidu.com/ HTTP/1.1" 404 768
+124.156.4.232 - - [09/Dec/2014 21:55:36] "HEAD / HTTP/1.0" 404 0
+77.53.108.189 - - [09/Dec/2014 22:12:32] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+82.245.101.229 - - [09/Dec/2014 22:14:45] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+82.229.103.145 - - [09/Dec/2014 22:27:48] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+83.136.28.66 - - [09/Dec/2014 22:46:04] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+89.247.175.145 - - [09/Dec/2014 23:19:37] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+219.162.117.182 - - [09/Dec/2014 23:25:56] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+86.31.49.54 - - [09/Dec/2014 23:35:20] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+140.130.192.59 - - [09/Dec/2014 23:43:31] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+74.212.247.235 - - [10/Dec/2014 00:06:46] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+176.127.235.52 - - [10/Dec/2014 01:19:26] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+115.179.221.91 - - [10/Dec/2014 01:25:28] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+87.57.192.161 - - [10/Dec/2014 01:28:38] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+89.202.251.115 - - [10/Dec/2014 01:35:30] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+79.14.94.144 - - [10/Dec/2014 01:39:06] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+190.128.194.22 - - [10/Dec/2014 02:10:03] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+50.117.86.250 - - [10/Dec/2014 04:07:55] "GET /manager/html HTTP/1.1" 404 753
+84.148.249.5 - - [10/Dec/2014 05:54:42] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+94.7.104.71 - - [10/Dec/2014 06:08:02] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+61.160.247.34 - - [10/Dec/2014 06:28:36] "GET /manager/html HTTP/1.1" 404 753
+151.229.247.180 - - [10/Dec/2014 06:29:58] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+182.171.234.167 - - [10/Dec/2014 06:37:57] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+180.216.4.144 - - [10/Dec/2014 06:46:26] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+104.192.0.18 - - [10/Dec/2014 06:46:29] "GET /cgi-bin/index.cgi HTTP/1.0" 404 794
+126.125.199.220 - - [10/Dec/2014 07:01:10] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+223.255.173.184 - - [10/Dec/2014 07:16:02] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+176.46.229.43 - - [10/Dec/2014 08:06:32] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+78.0.11.166 - - [10/Dec/2014 08:22:45] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+58.218.199.8 - - [10/Dec/2014 09:17:40] "GET /manager/html HTTP/1.1" 404 748
+58.218.199.8 - - [10/Dec/2014 09:17:41] "GET /manager/html HTTP/1.1" 404 748
+58.218.199.8 - - [10/Dec/2014 09:17:43] "GET /manager/html HTTP/1.1" 404 748
+58.218.199.8 - - [10/Dec/2014 09:17:44] "GET /manager/html HTTP/1.1" 404 748
+71.75.150.32 - - [10/Dec/2014 09:25:42] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+221.125.252.227 - - [10/Dec/2014 09:34:57] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+88.72.215.190 - - [10/Dec/2014 10:39:16] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+82.44.28.238 - - [10/Dec/2014 11:25:10] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+222.186.31.196 - - [10/Dec/2014 11:48:55] "GET /manager/html HTTP/1.1" 404 753
+83.76.41.127 - - [10/Dec/2014 11:57:05] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+82.44.28.238 - - [10/Dec/2014 13:06:54] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+180.51.238.142 - - [10/Dec/2014 14:05:21] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+91.223.205.102 - - [10/Dec/2014 16:33:00] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+188.86.229.7 - - [10/Dec/2014 16:47:05] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+103.10.87.113 - - [10/Dec/2014 18:39:38] "GET /manager/html HTTP/1.1" 404 753
+24.201.8.102 - - [10/Dec/2014 18:44:12] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+88.71.67.185 - - [10/Dec/2014 20:36:04] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+78.248.220.47 - - [10/Dec/2014 20:47:38] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+83.78.206.151 - - [10/Dec/2014 20:50:52] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+123.249.19.59 - - [10/Dec/2014 21:00:32] "GET /manager/html HTTP/1.1" 404 753
+77.59.150.177 - - [10/Dec/2014 21:12:24] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+119.75.38.50 - - [10/Dec/2014 21:52:13] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+93.63.66.78 - - [10/Dec/2014 22:12:53] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+220.133.25.24 - - [10/Dec/2014 23:02:43] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+91.118.62.99 - - [10/Dec/2014 23:04:57] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+217.92.28.238 - - [10/Dec/2014 23:05:57] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+141.136.131.81 - - [10/Dec/2014 23:21:33] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+50.117.86.250 - - [11/Dec/2014 00:03:50] "GET /manager/html HTTP/1.1" 404 753
+193.81.213.135 - - [11/Dec/2014 00:29:46] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+217.91.65.152 - - [11/Dec/2014 00:36:15] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+115.137.131.46 - - [11/Dec/2014 00:39:50] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+175.208.176.56 - - [11/Dec/2014 00:40:44] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+202.210.147.4 - - [11/Dec/2014 00:51:13] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+87.171.192.47 - - [11/Dec/2014 00:56:35] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+79.226.186.178 - - [11/Dec/2014 01:02:06] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+149.129.149.54 - - [11/Dec/2014 01:23:43] "GET /tmUnblock.cgi HTTP/1.1" 404 786
+70.88.112.249 - - [11/Dec/2014 01:32:01] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+140.116.238.141 - - [11/Dec/2014 01:50:06] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+203.206.142.33 - - [11/Dec/2014 01:53:45] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+79.107.196.17 - - [11/Dec/2014 02:35:14] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+202.81.247.124 - - [11/Dec/2014 03:11:47] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+90.205.43.82 - - [11/Dec/2014 03:28:18] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+83.193.92.112 - - [11/Dec/2014 03:36:22] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 763
+149.129.44.2 - - [11/Dec/2014 03:43:03] "GET /tmUnblock.cgi HTTP/1.1" 404 786
+50.131.149.46 - - [11/Dec/2014 04:24:27] "GET /shirt/9999 HTTP/1.1" 200 158
+50.131.149.46 - - [11/Dec/2014 04:24:27] "GET /favicon.ico HTTP/1.1" 404 787
+Traceback (most recent call last):
+  File "/home/ubuntu/pythonws/bottle.py", line 861, in _handle
+    return route.call(**args)
+  File "/home/ubuntu/pythonws/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "test.py", line 62, in getShoe
+    cursor.execute("SELECT shoeId, shoeName, shoeQuantity, createdBy, createdDate FROM SHOE_TABLE where shoeId = %s" % shoeId)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+50.131.149.46 - - [11/Dec/2014 04:24:36] "GET /shoe/9999 HTTP/1.1" 500 795
+50.131.149.46 - - [11/Dec/2014 04:24:52] "GET /shirt/9999 HTTP/1.1" 200 158
+Traceback (most recent call last):
+  File "/home/ubuntu/pythonws/bottle.py", line 861, in _handle
+    return route.call(**args)
+  File "/home/ubuntu/pythonws/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "test.py", line 62, in getShoe
+    cursor.execute("SELECT shoeId, shoeName, shoeQuantity, createdBy, createdDate FROM SHOE_TABLE where shoeId = %s" % shoeId)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+50.131.149.46 - - [11/Dec/2014 04:24:57] "GET /shoe/9999 HTTP/1.1" 500 795
+Bottle v0.13-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+50.131.149.46 - - [11/Dec/2014 04:29:12] "GET /shoe/99990 HTTP/1.1" 200 26

@@ -13,7 +13,7 @@ shirtCol = mongoDB.shirts
 
 db = MySQLdb.connect(host="localhost", # your host, usually localhost
 					user="root", # your username
-					passwd="summer", # your password
+					passwd="root", # your password
 					db="pydb") # name of the data base
 cursor = db.cursor()
 
